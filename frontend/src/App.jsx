@@ -22,7 +22,6 @@ function App() {
   // Redux
   const dispatch = useDispatch()
   const products = useSelector((state) => state.products.items)
-  const status = useSelector((state) => state.products.status)
 
   // Fetch products based on sort order
   const loadProducts = useCallback(async () => {
